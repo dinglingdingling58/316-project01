@@ -3,7 +3,7 @@
 核心扫描模块 - 文件系统遍历、类型识别、文件过滤
 """
 import os
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Optional
 from dataclasses import dataclass, field
 from utils.config import Config
 from utils.validators import (

@@ -3,7 +3,6 @@
 多格式文档静态结构扫描与元数据提取工具
 主入口模块 - 负责参数解析与流程调度
 """
-import os
 import sys
 from typing import Optional, List
 
@@ -97,7 +96,7 @@ def run_reporter(reporter: ReportGenerator) -> Optional[str]:
     success, error = reporter.save_report()
     
     if success:
-        report_path = os.path.join(reporter._config.output_dir, "analysis-report.txt")
+        report_path = reporter.get_report_path()
         print_info(f"报告已保存: {report_path}")
         return report_path
     else:

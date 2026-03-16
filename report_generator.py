@@ -3,7 +3,7 @@
 报告生成模块 - 报告生成、格式化输出
 """
 import os
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Optional, Tuple
 from datetime import datetime
 from dataclasses import dataclass, field
 
@@ -318,9 +318,10 @@ class ReportGenerator:
             return True, None
         except Exception as e:
             return False, f"保存报告失败: {str(e)}"
-
-
-from typing import Tuple
+    
+    def get_report_path(self) -> str:
+        """获取报告文件路径"""
+        return os.path.join(self._config.output_dir, REPORT_FILENAME)
 
 
 def create_report_generator(config: Config) -> ReportGenerator:

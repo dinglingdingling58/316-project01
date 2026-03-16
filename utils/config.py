@@ -3,7 +3,7 @@
 配置模块 - 定义常量、支持的后缀列表、配置读取功能
 """
 import os
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Optional
 
 INPUT_DIR: str = "./source_data/"
 OUTPUT_DIR: str = "./output_build/"

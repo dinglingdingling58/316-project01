@@ -3,7 +3,7 @@
 核心解析模块 - 内容解析（md标题、py简单静态检查）
 """
 import re
-from typing import Dict, List, Any, Optional, Tuple
+from typing import Dict, List, Optional
 from dataclasses import dataclass, field
 from utils.config import (
     MARKDOWN_HEADING_PATTERNS,
