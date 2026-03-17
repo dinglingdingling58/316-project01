@@ -4,9 +4,9 @@ from typing import List, Dict, Any
 
 from utils.util_config import INPUT_DIR, OUTPUT_DIR, read_protected_config
 from utils.util_validators import validate_input_directory
-from core_scanner import scan_directory, read_file_content
-from core_parser import parse_file
-from report_builder import generate_report
+from scanner_module import scan_directory, read_file_content
+from parser_module import parse_file
+from report_generator import generate_report
 
 
 def main() -> int:
