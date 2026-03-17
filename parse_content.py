@@ -5,7 +5,7 @@
 import re
 from typing import Dict, List, Optional
 from dataclasses import dataclass, field
-from utils.config import (
+from util_config import (
     MARKDOWN_HEADING_PATTERNS,
     PYTHON_SINGLE_LETTER_VARS,
     PYTHON_DUNDER_NAMES

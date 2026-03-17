@@ -7,10 +7,10 @@ from typing import List, Dict, Optional, Tuple
 from datetime import datetime
 from dataclasses import dataclass, field
 
-from core_scanner import FileInfo, ScanResult
-from core_parser import FileParseResult
-from utils.config import Config, REPORT_FILENAME
-from utils.validators import ensure_dir_exists
+from scan_directory import FileInfo, ScanResult
+from parse_content import FileParseResult
+from util_config import Config, REPORT_FILENAME
+from util_validators import ensure_dir_exists
 
 
 @dataclass

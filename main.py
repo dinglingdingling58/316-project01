@@ -6,11 +6,11 @@
 import sys
 from typing import Optional, List
 
-from utils.config import create_config, Config
-from utils.validators import is_directory, ensure_dir_exists
-from core_scanner import create_scanner, FileScanner, ScanResult
-from core_parser import create_parser, ContentParser, FileParseResult
-from report_generator import create_report_generator, ReportGenerator
+from util_config import create_config, Config
+from util_validators import is_directory, ensure_dir_exists
+from scan_directory import create_scanner, FileScanner, ScanResult
+from parse_content import create_parser, ContentParser, FileParseResult
+from report_writer import create_report_generator, ReportGenerator
 
 
 def print_banner() -> None:
